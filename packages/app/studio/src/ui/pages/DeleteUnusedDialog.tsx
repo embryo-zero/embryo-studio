@@ -45,7 +45,7 @@ export namespace DeleteUnusedDialog {
                         <span className="name" title={asset.id} onclick={() => model.setValue(!model.getValue())}>
                             {asset.name}
                         </span>
-                        <span className="library" title="Can be downloaded again from the openDAW library">
+                        <span className="library" title="Can be downloaded again from the Embryo Studio library">
                             {asset.origin === "openDAW" ? "library" : ""}
                         </span>
                         <span className="size">{Bytes.toString(asset.size)}</span>

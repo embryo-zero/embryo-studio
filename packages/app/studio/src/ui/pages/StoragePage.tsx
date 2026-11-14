@@ -67,7 +67,7 @@ export const StoragePage: PageFactory<StudioService> = ({lifecycle, service}: Pa
         const users = asset.usedBy.map(ref => nameOf(report, ref)).join(", ")
         if (asset.usedBy.length > 0 && !await confirm("Still In Use",
             `'${asset.name}' is used by ${users}. They will miss it after the deletion.`, "Continue")) {return}
-        const reload = asset.origin === "openDAW" ? " It can be downloaded again from the openDAW library." : ""
+        const reload = asset.origin === "openDAW" ? " It can be downloaded again from the Embryo Studio library." : ""
         if (!await confirm(`Delete ${KindLabels[asset.kind]}`,
             `'${asset.name}' (${Bytes.toString(asset.size)})\n${Consequence}${reload}`)) {return}
         if (asset.kind === "sample") {playback.eject()}

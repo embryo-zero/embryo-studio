@@ -47,7 +47,7 @@ const tiles: ReadonlyArray<Tile> = [
     {
         icon: IconSymbol.Code,
         title: "Open Source",
-        text: "openDAW is open source. Inspect it, fork it, self-host it, or build your own devices and "
+        text: "Embryo Studio is built on openDAW, which is open source (AGPL v3). Our changes are public on GitHub. Inspect it, build your own devices and "
             + "extensions on top.",
         path: "/manuals/open-source"
     }

@@ -196,7 +196,7 @@ export const WclapBrowser = ({lifecycle, service}: Construct) => {
         <div className={className}>
             <div className="filter">
                 <RadioGroup lifecycle={lifecycle} model={location} elements={[
-                    {value: AssetLocation.OpenDAW, element: <Icon symbol={IconSymbol.CloudFolder}/>, tooltip: "WebCLAP plugins hosted by openDAW"},
+                    {value: AssetLocation.OpenDAW, element: <Icon symbol={IconSymbol.CloudFolder}/>, tooltip: "WebCLAP plugins hosted by Embryo Studio"},
                     {value: AssetLocation.Local, element: <Icon symbol={IconSymbol.UserFolder}/>, tooltip: "WebCLAP bundles stored on this device"}
                 ]} appearance={{framed: true, landscape: true}}/>
                 <SearchInput lifecycle={lifecycle} model={filter} style={{gridColumn: "1 / -1"}}/>

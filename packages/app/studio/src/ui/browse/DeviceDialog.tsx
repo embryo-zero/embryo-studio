@@ -372,7 +372,7 @@ export namespace DeviceDialog {
         const content: HTMLElement = (
             <div className={className} style={{"--color": color.toString()}}>
                 <div className="filter-bar">
-                    {toggle(filter.showStock, "Show what comes from the openDAW cloud", IconSymbol.CloudFolder)}
+                    {toggle(filter.showStock, "Show what comes from the Embryo Studio library", IconSymbol.CloudFolder)}
                     {toggle(filter.showUser, "Show what is stored on this device", IconSymbol.UserFolder)}
                     <div className="separator"/>
                     {toggle(filter.showPresets, "Show presets", IconSymbol.Folder)}

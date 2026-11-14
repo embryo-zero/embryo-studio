@@ -23,7 +23,7 @@ const browse = (scope: BrowseScope): Procedure<StudioService> => service => {
 // Keys are the anchors. A key without a registered element shows a centered card.
 export const TourSteps: Record<TourAnchor, TourStep> = {
     menu: {
-        screen: "default", placement: "below", frame: 8, headline: "openDAW Menu",
+        screen: "default", placement: "below", frame: 8, headline: "Embryo Studio Menu",
         text: "Create, open, save and export projects here. It also imports audio and stems, joins live rooms, backs up to the cloud and opens the preferences."
     },
     manuals: {

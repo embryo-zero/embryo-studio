@@ -23,7 +23,7 @@ export namespace ShortcutSheet {
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>openDAW Shortcuts</title>
+<title>Embryo Studio Shortcuts</title>
 <style>
     * { box-sizing: border-box; }
     body { margin: 0; padding: 2.5rem; background: white; color: black;
@@ -52,7 +52,7 @@ export namespace ShortcutSheet {
 </head>
 <body>
 <header>
-    <h1>openDAW Shortcuts</h1>
+    <h1>Embryo Studio Shortcuts</h1>
     <span>${escape(new Date().toLocaleDateString())} <button onclick="window.print()">Print</button></span>
 </header>
 <main>${sections}

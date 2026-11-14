@@ -38,7 +38,7 @@ export namespace Tour {
         const lifecycle = new Terminator()
         const never = lifecycle.own(new DefaultObservableValue(false))
         Dialogs.show({
-            headline: "Welcome to openDAW",
+            headline: "Welcome to Embryo Studio",
             okText: "Start tour",
             buttons: [{text: "Not now", onClick: handler => handler.close()}],
             content: <p style={{margin: "0"}}>Take a quick tour of the studio?</p>,

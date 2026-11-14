@@ -23,7 +23,7 @@ export namespace LatencyMeasurement {
             headline: "Measure Latency",
             content: (
                 <div>
-                    <p>openDAW plays three short noise bursts and listens for them on this input, so recordings land exactly in time.</p>
+                    <p>Embryo Studio plays three short noise bursts and listens for them on this input, so recordings land exactly in time.</p>
                     <p>The input has to hear the output: speakers work as they are, hold headphones to the microphone.</p>
                     <p><a href="/manuals/latency-calibration" target="manuals">How it works</a></p>
                 </div>

@@ -224,7 +224,7 @@ export namespace DeviceCatalog {
             {label: "Vendor", value: wclap.info.vendor},
             {label: "License", value: wclap.license.length > 0 ? wclap.license : "-"},
             {label: "Size", value: wclap.size > 0 ? Bytes.toString(wclap.size) : "-"},
-            {label: "Stored", value: wclap.local ? "On this device" : "openDAW cloud"}
+            {label: "Stored", value: wclap.local ? "On this device" : "Embryo Studio library"}
         ],
         // openDAW's own features (the device panel, its width) are for the studio, not tags
         tags: wclap.info.features.filter(feature => !feature.startsWith("opendaw:")), preset: Option.None, bundle: Option.None,
@@ -254,12 +254,12 @@ export namespace DeviceCatalog {
 
     const soundfontEntry = ({soundfont, local}: SoundfontSource, player: Stock): DeviceEntry => ({
         key: `soundfont:${soundfont.uuid}`, kind: "soundfont", local, name: soundfont.name,
-        brief: local ? "Imported soundfont" : "Soundfont from openDAW", caption: `Soundfont for ${player.name}`,
+        brief: local ? "Imported soundfont" : "Soundfont from the Embryo Studio library", caption: `Soundfont for ${player.name}`,
         description: "", icon: player.icon, iconUrl: Option.None, deviceKey: player.key,
         facts: [
             {label: "Size", value: Bytes.toString(soundfont.size)},
             {label: "License", value: soundfont.license.length > 0 ? soundfont.license : "-"},
-            {label: "Stored", value: local ? "On this device" : "openDAW cloud"}
+            {label: "Stored", value: local ? "On this device" : "Embryo Studio library"}
         ],
         tags: ["soundfont"], preset: Option.None, bundle: Option.None,
         prepare: () => Promise.resolve(plainCandidate((project, slot) => {
