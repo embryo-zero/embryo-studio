@@ -6,8 +6,8 @@ import {fetchIndex} from "./IndexFetch"
 import {Promises} from "@opendaw/lib-runtime"
 
 export class OpenSoundfontAPI {
-    static readonly ApiRoot = "https://api.opendaw.studio/soundfonts"
-    static readonly FileRoot = "https://assets.opendaw.studio/soundfonts"
+    static readonly ApiRoot = "/embryo-api/soundfonts"
+    static readonly FileRoot = "/embryo-assets/soundfonts"
     static readonly IndexFile = `${OpenSoundfontAPI.FileRoot}/index.json`
 
     @Lazy

@@ -335,11 +335,9 @@ export class ErrorHandler {
                     : {name: error.name, stack: error.stack?.slice(0, maxStackSize)},
                 logs: isDefined(scrub) ? logs.map(entry => ({...entry, args: entry.args.map(scrub)})) : []
             } satisfies ErrorLog)
-            return fetch("https://logs.opendaw.studio/log.php", {
-                method: "POST",
-                headers: {"Content-Type": "application/json"},
-                body
-            })
+            // Embryo Studio: error reports stay in the browser console; nothing is sent to any server.
+            void body
+            return new Response(null, {status: 204})
         }).then(console.info, console.warn)
     }
 

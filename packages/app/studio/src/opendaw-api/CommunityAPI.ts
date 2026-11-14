@@ -7,7 +7,7 @@ import {CommunityIndex, CommunityScript, CommunityScriptIndex, CommunityScriptTa
 import {WclapIndex} from "./WclapIndex"
 
 export class CommunityAPI {
-    static readonly FileRoot = "https://assets.opendaw.studio/community"
+    static readonly FileRoot = "/embryo-assets/community"
     static readonly ScriptsIndexFile = `${CommunityAPI.FileRoot}/scripts/index.json`
     static readonly WclapsIndexFile = `${CommunityAPI.FileRoot}/wclaps/index.json`
 

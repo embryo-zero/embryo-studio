@@ -11,7 +11,7 @@ const loadLimit = 100
 
 export const ErrorsPage: PageFactory<StudioService> = ({lifecycle}: PageContext<StudioService>) => {
     let offset = 0
-    const loadMore = () => fetch(`https://logs.opendaw.studio/list.php?offset=${offset}&limit=${loadLimit}`)
+    const loadMore = () => fetch(`/embryo-api/logs/list.php?offset=${offset}&limit=${loadLimit}`)
         .then(response => {
             offset += loadLimit
             return response.json()
@@ -28,7 +28,7 @@ export const ErrorsPage: PageFactory<StudioService> = ({lifecycle}: PageContext<
             >here</a>.</h5>
             <code onInit={async element => {
                 element.textContent = "loading status..."
-                const {status, value} = await Promises.tryCatch(fetch("https://logs.opendaw.studio/status.php")
+                const {status, value} = await Promises.tryCatch(fetch("/embryo-api/logs/status.php")
                     .then(response => response.json())
                     .then(json => Object.entries(json).map(([key, entry]) => `${key}: ${entry}`).join(", ")))
                 element.textContent = status === "resolved" ? value : "status unavailable"

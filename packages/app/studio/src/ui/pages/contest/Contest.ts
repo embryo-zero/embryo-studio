@@ -49,7 +49,7 @@ export namespace Contest {
         upload?: string, token?: string, chunkBytes?: int, id?: string
     }>
 
-    const Api = "https://api.opendaw.studio/contests"
+    const Api = "/embryo-api/contests"
 
     const BestOpus: AudioFormats.OpusSettings = {
         numberOfChannels: 2, bitrate: 510, complexity: 10, frameDuration: 20_000, variable: true, application: "audio"

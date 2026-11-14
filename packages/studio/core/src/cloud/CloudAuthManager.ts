@@ -50,7 +50,7 @@ export class CloudAuthManager {
             service: "SoundCloud",
             clientId: asDefined(this.#clientIds.SoundCloud, "No SoundCloud client id"),
             authUrlBase: "https://secure.soundcloud.com/authorize",
-            tokenUrl: "https://api.opendaw.studio/soundcloud/token.php",
+            tokenUrl: "/embryo-api/soundcloud/token.php",
             scope: ""
         }).then(token => new SoundCloudApi(token, () => this.#memoizedSoundCloud = this.#createSoundCloudMemo())),
             TimeSpan.minutes(55))

@@ -24,8 +24,8 @@ const SampleError = z.object({error: z.string()})
 
 // Standard openDAW samples (considered to be non-removable)
 export class OpenSampleAPI implements SampleAPI {
-    static readonly ApiRoot = "https://api.opendaw.studio/samples"
-    static readonly FileRoot = "https://assets.opendaw.studio/samples"
+    static readonly ApiRoot = "/embryo-api/samples"
+    static readonly FileRoot = "/embryo-assets/samples"
     static readonly IndexFile = `${OpenSampleAPI.FileRoot}/index.json`
 
     @Lazy

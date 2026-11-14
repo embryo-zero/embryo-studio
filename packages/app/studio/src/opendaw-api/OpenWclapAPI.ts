@@ -6,7 +6,7 @@ import {WclapIndex, WclapIndexEntry} from "./WclapIndex"
 
 // openDAW-hosted bundles at `<FileRoot>/<uuid>.wclap`, gzip without .gz (the host would send Content-Encoding)
 export class OpenWclapAPI {
-    static readonly FileRoot = "https://assets.opendaw.studio/wclaps"
+    static readonly FileRoot = "/embryo-assets/wclaps"
     static readonly IndexFile = `${OpenWclapAPI.FileRoot}/index.json`
 
     @Lazy
