@@ -34,7 +34,7 @@ type Construct = {
 }
 
 const location = new DefaultObservableValue(AssetLocation.OpenDAW)
-const LicenseNote = "Royalty-free, not licensed for redistribution"
+const LicenseNote = "Embryo-Zero library: free to use in your music"
 const expandedKeys = new Set<string>()
 
 export const SampleBrowser = ({lifecycle, service, background, fontSize}: Construct) => {

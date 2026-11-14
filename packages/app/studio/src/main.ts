@@ -20,9 +20,9 @@ if (Browser.isMobile() && mobileContest !== null) {
     document.body.innerHTML = `<div class="${className}">
         <div>
             <img class="logo" src="/favicon.svg" alt="openDAW logo">
-            <h1>openDAW</h1>
-            <p class="claim">Create Music Online</p>
-            <img class="screenshot" src="/images/studio-meta.jpg" alt="The openDAW Studio timeline, devices and mixer running in a web browser.">
+            <h1>Embryo Studio</h1>
+            <p class="claim">Make music on Embryo-Zero</p>
+            <img class="screenshot" src="/images/studio-meta.jpg" alt="The Embryo Studio timeline, devices and mixer running in a web browser.">
             <p>Hey there, thanks for stopping by!</p>
             <p>openDAW is a full music studio and needs the screen space of a computer, so it does not run on your phone.</p>
             <p>It is well worth coming back on a desktop or laptop browser. See you there!</p>
