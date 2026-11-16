@@ -23,6 +23,12 @@ export const Dashboard = ({lifecycle, service}: Construct) => (
             <header className="hero">
                 <h1>Embryo Studio</h1>
                 <div className="tagline">Make music on Embryo-Zero</div>
+                {/* AGPL-3.0 section 13: everyone using this changed version is offered its source */}
+                <div className="tagline" style={{fontSize: "0.75em", opacity: "0.8"}}>
+                    Free software based on <a href="https://github.com/andremichelle/openDAW" target="_blank" rel="noopener noreferrer">openDAW</a>,
+                    licensed <a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank" rel="noopener noreferrer">AGPL-3.0</a> ·{" "}
+                    <a href="https://github.com/embryo-zero/embryo-studio/tree/embryo" target="_blank" rel="noopener noreferrer">Embryo Studio source code</a>
+                </div>
             </header>
             <ActionButtons lifecycle={lifecycle} service={service}/>
         </div>
