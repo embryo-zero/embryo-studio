@@ -13,7 +13,9 @@ type Link = { label: string, href: string, icon: IconSymbol, iconScale?: number 
 
 const links: ReadonlyArray<Link> = [
     {label: "opendaw.org", href: "https://opendaw.org", icon: IconSymbol.OpenDAW, iconScale: 0.9},
-    {label: "GitHub", href: "https://github.com/andremichelle/openDAW", icon: IconSymbol.Github},
+    // Embryo Studio (AGPL-3.0 section 13): users of this changed version are offered its source here.
+    {label: "Embryo Studio source code (AGPL-3.0)", href: "https://github.com/embryo-zero/embryo-studio/tree/embryo", icon: IconSymbol.Github},
+    {label: "openDAW (original) on GitHub", href: "https://github.com/andremichelle/openDAW", icon: IconSymbol.Github},
     {label: "Discord", href: "https://discord.opendaw.studio/", icon: IconSymbol.Discord},
     {label: "Instagram", href: "https://www.instagram.com/opendaw.studio", icon: IconSymbol.Instagram},
     {label: "LinkedIn", href: "https://www.linkedin.com/company/opendaw-org", icon: IconSymbol.LinkedIn},
